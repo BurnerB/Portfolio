@@ -114,17 +114,45 @@ main{
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3,1fr);
-    
+
+    .textOverImage{
+        position: relative;
+
+        .img_description{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: black;
+            color: $secondary-color;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+            opacity: 0;
+            visibility: visible;
+        }
+
+        &:hover .img_description{
+            width: 100%;
+            padding: 8px 15px;
+            visibility: visible;
+            opacity: 0.9; 
+            border-color: $secondary-color;
+        }   
+    }
+
     img{
         width: 100%;
+        height: 200px;
         border:3px #fff solid;
 
         &:hover{
-            opacity: 0.5;
-            border-color: $secondary-color;
+            // opacity: 0.3;
             @include easeOut;
         }
+
+        
     }
+
+    
 }
 
 //Button styles
