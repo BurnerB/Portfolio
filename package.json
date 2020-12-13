@@ -1,9 +1,9 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Responsive Portfolio",
   "main": "index.js",
-  "homepage": "git@github.com:burnerb/Portfolio.git",
+  "homepage": "http://git@github.com:burnerb/Portfolio.git",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -12,6 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.1.1",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurnerB/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BurnerB/Portfolio/issues"
   }
 }
