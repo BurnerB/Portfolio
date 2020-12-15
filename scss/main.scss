@@ -74,6 +74,9 @@ main{
         }
     }
 }
+.intro{
+    z-index: 1;
+}
 #contact{
     z-index: 1;
 }
@@ -81,7 +84,7 @@ main{
 section{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
